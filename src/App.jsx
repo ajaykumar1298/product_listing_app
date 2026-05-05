@@ -60,7 +60,7 @@ function App() {
         {/* Product Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {products?.data?.map((product) => {
-            // ✅ Discount calculation
+            //  Discount calculation
             const discountedPrice = (
               product.price -
               (product.price * product.discountPercentage) / 100

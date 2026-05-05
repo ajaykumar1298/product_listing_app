@@ -1,17 +1,72 @@
-# React + Vite
+🛒 Product Listing App (React + Axios)
+A modern and responsive Product Listing Application built using React.js, Axios, and Tailwind CSS.
+This app fetches product data from a public API and displays it in a clean e-commerce style UI with pricing, discounts, and product details.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Features
+-Fetch products from API
+-E-commerce style product cards
+-Discount badge on product image
+-Product description
+-Rating & 📦 stock display
+-Pagination (Next / Previous)
+-Loading state handling
+-Fully responsive design
+-Styled using Tailwind CSS
 
-Currently, two official plugins are available:
+🛠️ Tech Stack
+-Frontend: React.js (Hooks)
+-HTTP Client: Axios
+-Styling: Tailwind CSS
+-API: FreeAPI Random Products
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+📂 Project Structure
+src/
+│── App.jsx
+│── main.jsx
+│── index.css
 
-## React Compiler
+⚙️ Installation & Setup
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1.Clone the repository
+git clone https://github.com/your-username/product-listing-app.git
+cd product-listing-app
 
-## Expanding the ESLint configuration
+2.Install dependencies
+npm install
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-"# product_listing_app" 
+3.Run the project
+npm run dev
+
+🔗 API Endpoint
+https://api.freeapi.app/api/v1/public/randomproducts?page=1
+
+
+🔄 Pagination Logic
+-Uses page state to track current page
+-Fetches new data on page change
+-Prev/Next buttons are disabled when:
+    -No previous page
+    -No next page
+    -While loading
+
+🧠 Concepts Used
+-React Hooks (useState, useEffect)
+-API integration using Axios
+-Conditional rendering
+-Optional chaining (?.)
+-Dynamic price calculation
+-Responsive UI design with Tailwind CSS
+
+📌 Future Improvements
+-Search products
+-Filter (price, category, rating)
+-Add to cart functionality
+-Wishlist feature
+-Infinite scrolling
+-Product details page
+
+👨‍💻 Author
+Ajay Kumar
+
+⭐ Support
+If you like this project, give it a ⭐ on GitHub!
